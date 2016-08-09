@@ -26,6 +26,17 @@
 ## Prior Knowledge
  - [Epipolar Geometry and the Fundamental Matrix](https://www.robots.ox.ac.uk/%7Evgg/hzbook/hzbook1/HZepipolar.pdf)
  - [Understanding Belief Propagation](http://www.merl.com/publications/docs/TR2001-22.pdf)
+ - Detection -> is object present in the image
+ - Localization -> accurate location of the detected object
+ - Recognition -> localization of all objects in the image 
+ - Scale space theory enables scale invariance
+ - Non-maximum suppresion to eliminate multiple detections close to object of interest
+ - Typical object detection pipeline - candidate box selection, feature extraction and classification
+ - object tracking - motion model, searching model and appearance model
+ - apperance model
+    - generative (model the object ignoring background, find most similar to model)
+    - discriminative (differentiate between target and background)
+
 
 ## Interesting topics and reading list
  - deep learning for object recognition
