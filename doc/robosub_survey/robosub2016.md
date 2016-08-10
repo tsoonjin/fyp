@@ -18,6 +18,8 @@
  - should include wider array of search movement
  - vision algorithm should be highly adaptable and easily tuned to different condition
  - understand more on how to tune the camera parameters dynamically based on conditions
+ - more generic way to localizing to object
+ - simulator for mission and vision testing using OpenGL shader with TRANSDEC texture
 
 
 ## Problem
@@ -42,6 +44,7 @@ Detecting and tracking known object in perturbed underwater for Robosub challeng
  - using semantic information for detection
  - explore parallelism in vision pipeline
  - deep learning with small amount of data
+ - generate labeled data from collected bags in TRANSDEC
 
 ## Interesting ideas
  - using context from global and local cues
@@ -59,3 +62,5 @@ Detecting and tracking known object in perturbed underwater for Robosub challeng
  - online random forest
  - short term and long term memory stores to process target appearace memories
  - include top-down bias such as altering color channel for better detection of red object
+ - using MRF for object segmentation or image restoration
+ - one shot learning or zero shot learning
