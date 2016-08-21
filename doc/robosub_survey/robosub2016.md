@@ -25,29 +25,37 @@
 ## Problem
 Detecting and tracking known object in perturbed underwater for Robosub challenges for localization
 
-## Background of the problem
- - static object
- - handle partial occlusion
+## Nature of the problem
+ - static rigid object
+ - relatively simple shape
+ - color degradation, low contrast, non-uniform illumination, shadow
  - know geometry of the object
  - lack of labeled data
- - noisy condition
- - single object online tracking
- - assuming illumination is not constant
+ - multiple object online tracking
  - short term tracking problem
+ - detection latency must be small
+
+## Where other solutions fail 
+ - failed to produce consistent detection in different environment i.e different pools
+ - too slow for real-time system 
+ - rely on other sensors such as LIDAR, sonar or acoustics system
+ - not robust to perturbed underwater condition
 
 ## Contributions to the problem
  - depth estimation from monocular images
- - general solution for most two obstacles in the challenge
- - achieve more accurate and robust detection in perturbed conditions with minimal tuning
- - work for different pools (Queenstown, House Pool, TRANSDEC)
- - simulate different water conditions
- - using semantic information for detection
+ - work in different environment and condition
+ - simulate different water conditions to generate synthetic data
+ - using semantic information or contextual data for detection
  - explore parallelism in vision pipeline
  - deep learning with small amount of data
- - generate labeled data from collected bags in TRANSDEC
+ - generate labeled data from collected bags in TRANSDEC easily
+ - dynamic camera parameter tuning
+ - redundancy built into algorithm 
 
 ## Interesting ideas
  - using context from global and local cues
+ - using global and local feature
+ - using optical flow since object is static
  - regionlet generic object detection instead of sliding window
  - using gaussian based hue descriptor which outperforms normal hue under differet illuminant
  - explore different detection proposal scheme i.e instance specific proposal 
@@ -64,3 +72,10 @@ Detecting and tracking known object in perturbed underwater for Robosub challeng
  - include top-down bias such as altering color channel for better detection of red object
  - using MRF for object segmentation or image restoration
  - one shot learning or zero shot learning
+
+## Ultimate improvement to win the vision war
+ - ensure object detection works across different environment
+ - works for far distance and near distance 
+ - distance estimation for detected object
+ - video understanding to aid with mission planner
+ - focuses on adaptation algorithm
