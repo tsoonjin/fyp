@@ -63,3 +63,51 @@ Analysis shows that for object detection improving proposal localisation accurac
 3. Proposals recall
 4. EdgeBox provides fastest proposal
 
+## [7. Robust method of vote aggregation and proposition verification for invariant local features](https://arxiv.org/pdf/1601.00781v1.pdf)
+
+### **Abstract**
+Graphical vote space presentation, the proposition generation, the two-pass iterative vote
+aggregation and the cascade filters for verification of the propositions to reduce false positive
+
+### **Details**
+1. Vote space creation for X, Y, Scale, Rotation & Distance.
+ - thresh = (MIN(V) + MAX(V)) / 2 where distance from vote group
+2. Vote aggregation
+3. Cascaded filter
+
+## [8. A Three-stage Approach for Segmenting Degraded Color Images: Smoothing, Lifting and Thresholding (SLaT)](https://arxiv.org/pdf/1506.00060.pdf)
+
+### **Abstract**
+Three stages for multiphase segmentation of color images corrupted by different degradations: noise,
+information loss, and blur
+
+### **Details**
+1. Recovery of smooth image using convex variational model minimization Mumford-Shah
+2. Dimensional lifting with secondary color space (Lab)
+ - create a vector-valued image {r, g, b, l, a, b}
+3. K-mean on the vector value
+
+## [9. 50 Years of object recognition: Detection Directions forward](https://www.researchgate.net/publication/257484936_50_Years_of_object_recognition_Directions_forward)
+
+### **Abstract** ###
+Highlight the important role that active and attentive approaches must play in any solution that
+bridges the semantic gap in the proposed object representations, while simultaneously leading to
+efficient learning and inference algorithms
+
+### **Details** ###
+1. Active & Dynamic vision
+ - Attention mechanism, Object verification and moving camera
+ - selective perception (top-down)
+2. Case Studies From Recognition Challenges and The Evolving Landscape
+ - Evaluations: Receiver Operating Characteristics (ROC), Detection Error Tradeoff (DET)
+ - PASCAL Challenge: passive vision 
+
+## [10. Interactions of Visual Attention and Object Recognition: Computational Modeling, Algorithms, and Psychophysics](http://thesis.library.caltech.edu/895/1/00_DirkWalther_PhDthesis.pdf)
+
+### **Abstract** ###
+New model of bottom-up salient region selection, which estimates the approximate extent of attended
+proto-objects in a biologically realistic manner.
+
+### **Details** ###
+1. Feature Sharing between Object Detection and Top-down Attention
+2. Detection and Tracking of Objects in Underwater Video

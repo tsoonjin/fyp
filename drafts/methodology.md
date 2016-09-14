@@ -29,3 +29,4 @@
 12. Negative samples learning
 13. Explore clustering and segmentation as preprocessing step
 14. Reasoning and working memory
+15. Correlation filter theory
