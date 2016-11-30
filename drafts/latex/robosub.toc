@@ -1,3 +1,0 @@
-\select@language {english}
-\contentsline {section}{\numberline {1}Journey}{2}
-\contentsline {section}{\numberline {2}Obstacles}{3}
